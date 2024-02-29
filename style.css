@@ -1,0 +1,135 @@
+:root{
+    --color-primary: #0a4180;
+    --color-danger: #ff0000;
+    --color-success: #00ec6a;
+    --color-warning: #f8fc04;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #000000;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+
+    --color-background: #000000;
+    --color-font: #ffffff;
+
+}
+*{
+    list-style: none;
+    text-decoration: none;
+}
+.red{
+    --color-font: red;
+}
+.blue{
+    --color-font: blue;
+}
+.white{
+    --color-font: white;
+}
+.yellow{
+    --color-font: yellow;
+}
+
+body{
+    background-color: var(--color-background);
+    color:var(--color-font);
+}
+header{
+    padding: 20px;
+    background-color: var(--color-background);
+    color: var(--color-font);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+.setting-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+.setting {
+    animation: loader 3s infinite;
+    width: 50px;
+    height: 50px;
+    color: var(--color-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: var(--color-font);
+}
+.menu_bar{
+    display: none;
+}
+@media (max-width:770px) {
+    .navi{
+        display: none;
+    }
+    .menu_bar{
+        display: block;
+    }
+    .contact img:hover{
+        transform: scale(0);
+    }
+    
+    .certificate img:hover{
+        transform: scale(0);
+    }
+}
+  
+@keyframes loader {
+    0% {
+      rotate: 0deg;
+    }
+    100% {
+      border-radius: 50%;
+      rotate: 180deg;
+    }
+}
+
+
+.font-color{
+    color: var(--color-font);
+}
+
+.slide-menu{
+    background-color: var(--color-background);
+    height: 100vh;
+    width: 0vw;
+    z-index: 100;
+    opacity: 0.9;
+    overflow: hidden;
+    transition: all 0.8s ease-in-out;
+}
+
+.slide-menu a{
+    color: var(--color-font);
+    text-decoration: none;
+}
+
+.progress-bar{
+    background-color: var(--color-font);
+}
+.certificate img{
+    width: 100%;
+    transition: all 0.7s ease-in-out;
+}
+.contact img{
+    width: 100%;
+    transition: all 0.7s ease-in-out; 
+}
+
+.contact img:hover{
+    transform: scale(2);
+}
+
+.certificate img:hover{
+    transform: scale(2);
+}
+
+footer{
+    padding: 30px;
+}

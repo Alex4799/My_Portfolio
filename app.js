@@ -1,5 +1,5 @@
 var typed = new Typed('.auto-type', {
-    strings: ['Htet Arkar Lin, a Website Developer from Yangon.'],
+    strings: ["Hello. I'm Htet Arkar Lin, a Website Developer from Yangon."],
     typeSpeed: 100,
   });
 

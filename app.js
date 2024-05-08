@@ -7,6 +7,7 @@ function setFontColor(color){
     let body=document.getElementsByTagName('body')[0];
     body.className='';
     body.classList.add(color);
+    localStorage.setItem('font-color',color);
 }
 
 let menuBar=document.getElementById('menu_bar');
@@ -22,3 +23,8 @@ xMark.addEventListener('click',function(){
     slideMenu.style.width='0vw';
 
 })
+if (localStorage.getItem('font-color')!='') {
+    let body=document.getElementsByTagName('body')[0];
+    body.className='';
+    body.classList.add(localStorage.getItem('font-color'));
+}
